@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <div class="container-fluid h-100 p-0">
-        <header class="p-2">
-            <h1>Home</h1>
-            <nav class="navbar navbar-expand-sm mr-auto">
+    <div class="container h-100 p-0">
+        <header class="px-4 row">
+            <h1 class="col-sm-3">Home</h1>
+            <nav class="navbar navbar-expand-sm mr-auto col-sm-9">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="geolocation.html">GEOLOCATION</a></li>
@@ -23,37 +23,44 @@
                 </ul>
             </nav>
         </header>
-        <section class="p-2">
-            <button class="btn bg-success" onclick="test(this)">Show Geolocation Data</button>
-        </section>
-        <section class="p-2">
-            <table class="table-striped" id="geoDataTable">
-                <tr>
-                    <td>Latitude</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Longitude</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>IP</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>City</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Region</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Country</td>
-                    <td></td>
-                </tr>
-            </table>
-        </section>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <section class="p-2">
+                    <button class="btn bg-success w-100" onclick="test(this)">Show Geolocation Data</button>
+                </section>
+                <section class="p-2">
+                    <table class="table-striped w-100" id="geoDataTable" style="visibility: hidden;">
+                        <tr>
+                            <td>Latitude</td>
+                            <td id="latitude"></td>
+                        </tr>
+                        <tr>
+                            <td>Longitude</td>
+                            <td id="longitude"></td>
+                        </tr>
+                        <tr>
+                            <td>IP</td>
+                            <td id="ip"></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td id="city"></td>
+                        </tr>
+                        <tr>
+                            <td>Region</td>
+                            <td id="region"></td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td id="country"></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
     </div>
     <script src="js/home.js"></script>
     <script src="js/bootstrap.js"></script>

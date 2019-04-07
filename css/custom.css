@@ -1,6 +1,8 @@
 header {
     background-color: #002933;
-    border-bottom: 2px solid black;
+    border: 2px solid black;
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 button.btn {

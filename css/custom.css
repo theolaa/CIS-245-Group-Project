@@ -8,3 +8,7 @@ header {
 button.btn {
     color: white;
 }
+
+#map {
+    height: 425px;
+}
